@@ -41,7 +41,7 @@
         <nuxt-link to="/adventures" tag="li">
           <a>
             <span class="icon"><i class="fas fa-walking"></i></span>
-            <span class="title">L'aventure&#xA0;de Soann</span>
+            <span class="title">Les&#xA0;aventures de Soann</span>
           </a>
         </nuxt-link>
       </ul>
@@ -134,21 +134,17 @@
     left: 0;
     width: 100%;
     height: 5rem;
-    background: transparent;
-    margin: 0 1rem;
   }
 
   .navigation ul {
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .navigation ul li a {
-    color: #00f;
+    margin: 0.5rem;
   }
 
   .navigation ul li:first-child {
     margin-top: 1.8rem;
+    margin-left: 1.5rem;
   }
 
   .navigation ul li a .icon {
@@ -159,10 +155,6 @@
     white-space: normal;
     font-size: 1.2rem;
     margin: 0.5rem 0.2rem;
-  }
-
-  .navigation .nuxt-link-exact-active a {
-    color: #060668;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="sphere">
-      <img src="../assets/autism.webp" alt="" />
+      <img src="../assets/blue-ribbon.svg" alt="" />
     </div>
     <div class="circle">
       <span style="--i: 1">L</span>
@@ -80,7 +80,7 @@ section .sphere img {
   position: absolute;
   height: 80%;
   top: 10%;
-  left: 30%;
+  left: 10%;
   border-radius: 50%;
   object-fit: cover;
   filter: blur(0);
@@ -100,6 +100,8 @@ section .sphere img {
   left: -1rem;
   color: #d9e0f3;
   background: #060668;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
   font-size: 2rem;
   transform-origin: center;
   transform-style: preserve-3d;

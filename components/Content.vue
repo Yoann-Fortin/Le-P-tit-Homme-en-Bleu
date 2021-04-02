@@ -1,15 +1,11 @@
 <template>
-  <p :id="id">{{ content }}</p>
+  <div v-html="content" />
 </template>
 
 <script>
 export default {
-  name: 'Paragraph',
+  name: 'Content',
   props: {
-    id: {
-      type: String,
-      required: true,
-    },
     content: {
       type: String,
       required: true,
@@ -18,10 +14,10 @@ export default {
 }
 </script>
 
-<style scoped>
-p {
+<style>
+.paragraph {
   font-size: 1rem;
-  color: #060668;
+  color: #00f;
   margin: 1.2rem;
   margin-bottom: 0;
   margin-right: 2.2rem;
@@ -29,19 +25,33 @@ p {
   padding-bottom: 1rem;
 }
 
+.subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: bold;
+  color: #060668;
+  margin: 1.2rem;
+  margin-right: 2.2rem;
+}
+
 @media screen and (min-width: 768px) {
-  p {
+  .paragraph {
     font-size: 1.2rem;
-    margin: 1.2rem;
     line-height: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  p {
-    font-size: 1.5rem;
+  .paragraph {
+    font-size: 1rem;
     margin: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 }
 </style>

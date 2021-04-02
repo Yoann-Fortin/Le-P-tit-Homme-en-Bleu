@@ -25,6 +25,10 @@ h1 {
   font-weight: bold;
   color: #060668;
   text-shadow: black 1px 1px 1px;
+  margin: 1.2rem;
+  margin-right: 2.2rem;
+  margin-top: 0;
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 768px) {
