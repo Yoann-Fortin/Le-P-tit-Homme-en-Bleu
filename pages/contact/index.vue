@@ -1,10 +1,10 @@
 <template>
   <div>
     <div v-for="page in pages" :key="page.id">
-      <Title v-if="page.id === 48" :title="page.title.rendered" />
+      <Title v-if="page.id === 21" :title="page.title.rendered" />
 
       <Content
-        v-if="page.id === 48"
+        v-if="page.id === 21"
         class="container"
         :content="page.content.rendered"
       />
@@ -21,7 +21,9 @@ export default {
   components: { Title, Content },
   asyncData() {
     return axios
-      .get('http://localhost:8080/wp-json/wp/v2/pages/')
+      .get(
+        'http://yoannfw.cluster030.hosting.ovh.net/blog-autism/wp-json/wp/v2/pages'
+      )
       .then((res) => {
         return {
           pages: res.data,

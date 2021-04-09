@@ -4,7 +4,7 @@
       <Sphere />
     </div>
     <div v-for="page in pages" :key="page.id">
-      <Content v-if="page.id === 34" :content="page.content.rendered" />
+      <Content v-if="page.id === 6" :content="page.content.rendered" />
     </div>
   </div>
 </template>
@@ -18,7 +18,9 @@ export default {
   components: { Sphere, Content },
   asyncData() {
     return axios
-      .get('http://localhost:8080/wp-json/wp/v2/pages/')
+      .get(
+        'http://yoannfw.cluster030.hosting.ovh.net/blog-autism/wp-json/wp/v2/pages'
+      )
       .then((res) => {
         return {
           pages: res.data,
